@@ -1,0 +1,124 @@
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000349)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000262)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.067644)[0m   [0;1mCREATE DATABASE `rateme_development` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;35;1mSQL (0.000227)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.016386)[0m   [0mCREATE DATABASE `rateme_production` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000221)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.010755)[0m   [0;1mCREATE DATABASE `rateme_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000245)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000224)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.004708)[0m   [0;1mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000577)[0m   [0mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000715)[0m   [0;1mSELECT version FROM schema_info[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000252)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000223)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000599)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateUsers (1)
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.003827)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000404)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000695)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000885)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.003351)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.002872)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.002206)[0m   [0;1mSHOW KEYS FROM `users`[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000363)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000447)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000564)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000536)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000636)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.002604)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.002517)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001964)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000222)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000443)[0m   [0mDROP DATABASE IF EXISTS `rateme_test`[0m
+  [4;36;1mSQL (0.347700)[0m   [0;1mCREATE DATABASE `rateme_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000241)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.007000)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001501)[0m   [0mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;35;1mSQL (0.025596)[0m   [0mSHOW FIELDS FROM `schema_info`[0m
+  [4;36;1mSQL (0.000331)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000179)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000142)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.019685)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000398)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000417)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.062827)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001633)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001216)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000164)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.165780)[0m   [0mDROP DATABASE IF EXISTS `rateme_test`[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mCREATE DATABASE `rateme_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000166)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.004313)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001290)[0m   [0mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;35;1mSQL (0.019073)[0m   [0mSHOW FIELDS FROM `schema_info`[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000155)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000138)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000365)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000343)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000412)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001660)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001611)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001213)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000174)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.035007)[0m   [0mDROP DATABASE IF EXISTS `rateme_test`[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mCREATE DATABASE `rateme_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.003403)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001116)[0m   [0mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000386)[0m   [0;1mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;35;1mSQL (0.001020)[0m   [0mSHOW FIELDS FROM `schema_info`[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000169)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000161)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000375)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000436)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000457)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.001710)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001615)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.001293)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000168)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.005131)[0m   [0mDROP DATABASE IF EXISTS `rateme_test`[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mCREATE DATABASE `rateme_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'users': DROP TABLE `users`[0m
+  [4;36;1mSQL (0.003941)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `crypted_password` varchar(40) DEFAULT NULL, `salt` varchar(40) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, `remember_token` varchar(255) DEFAULT NULL, `remember_token_expires_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.001134)[0m   [0mCREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mINSERT INTO `schema_info` (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000992)[0m   [0mSHOW FIELDS FROM `schema_info`[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mUPDATE schema_info SET version = 1[0m
